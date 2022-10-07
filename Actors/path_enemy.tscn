@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Actors/Enemy.tscn" type="PackedScene" id=1]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 181.622, -34.6023, 0, 0, 0, 0, 180, -31, 0, 0, 0, 0, -1, -31, 0, 0, 0, 0, -1, -31, 0, 0, 0, 0, 1, -14, 0, 0, 0, 0, 89.0068, 9.58182, 0, 0, 0, 0, 180, -10, 0, 0, 0, 0, 131, -57, 0, 0, 0, 0, 173, -98, 0, 0, 0, 0, 180, -10, 0, 0, 0, 0, 181.622, -34.6023 )
+}
+
+[node name="path_enemy" type="Path2D"]
+position = Vector2( -7, 0.159088 )
+scale = Vector2( 1, 0.715909 )
+curve = SubResource( 1 )
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( -8, -26 )
